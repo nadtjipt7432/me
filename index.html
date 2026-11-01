@@ -5,16 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nadia Putri</title>
 <meta name="description" content="Nadia Putri. Ten words, and a few photographs. Chicago, Jakarta, Oxford.">
+<meta name="theme-color" content="#35231C">
 <link rel="preload" href="fonts/bodoni-moda-latin-standard-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bodoni-moda-latin-standard-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/eb-garamond-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/eb-garamond-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add("js")</script>
 </head>
 <body>
 
-<header class="top">
+<header class="bar" data-tone="dark">
   <div class="wrap">
-    <a class="name" href="#top" aria-label="Nadia Putri, back to top">Nadia Putri</a>
+    <a class="bar-name" href="#top" aria-label="Nadia Putri, back to top">Nadia <i>Putri</i></a>
     <nav class="label" aria-label="Sections">
       <a href="#ten-words">Ten Words</a>
       <a href="#about">About</a>
@@ -23,78 +26,110 @@
   </div>
 </header>
 
-<main class="wrap" id="top">
+<main id="top">
+<div class="dark">
+
+  <!-- ================= MASTHEAD ================= -->
+  <section class="mast wrap" aria-label="Introduction">
+    <h1 class="mast-name"><span>Nadia</span> <i>Putri</i></h1>
+    <p class="mast-sub">Ten words, and a few photographs.</p>
+  </section>
 
   <!-- ================= TEN WORDS ================= -->
-  <section class="tw" id="ten-words" aria-labelledby="tw-h">
-    <div class="headrow">
+  <section class="tw wrap" id="ten-words" aria-labelledby="tw-h">
+    <div class="sec-head">
       <h2 id="tw-h">Ten Words</h2>
       <span class="label quiet">Working principles, 2026</span>
+      <span class="label quiet tw-hint" aria-hidden="true">Hover or select a word to read it</span>
     </div>
 
-    <p class="tw-block" role="tablist" aria-label="Ten words"><span class="tw-hint label" aria-hidden="true">Hover or select a word to read it</span><button class="w" role="tab" id="w0" aria-selected="true" aria-controls="d0" tabindex="0"><sup>01</sup>Synthesis</button> <button class="w" role="tab" id="w1" aria-selected="false" aria-controls="d1" tabindex="-1"><sup>02</sup>Wonder</button> <button class="w" role="tab" id="w2" aria-selected="false" aria-controls="d2" tabindex="-1"><sup>03</sup>Judgement</button> <button class="w" role="tab" id="w3" aria-selected="false" aria-controls="d3" tabindex="-1"><sup>04</sup>Power</button> <button class="w" role="tab" id="w4" aria-selected="false" aria-controls="d4" tabindex="-1"><sup>05</sup>Purpose</button> <button class="w" role="tab" id="w5" aria-selected="false" aria-controls="d5" tabindex="-1"><sup>06</sup>Execution</button> <button class="w" role="tab" id="w6" aria-selected="false" aria-controls="d6" tabindex="-1"><sup>07</sup>Ambition</button> <button class="w" role="tab" id="w7" aria-selected="false" aria-controls="d7" tabindex="-1"><sup>08</sup>Autonomy</button> <button class="w" role="tab" id="w8" aria-selected="false" aria-controls="d8" tabindex="-1"><sup>09</sup>Tension</button> <button class="w" role="tab" id="w9" aria-selected="false" aria-controls="d9" tabindex="-1"><sup>10</sup>Beauty</button></p>
+    <div class="tw-grid">
+      <ol class="tw-list" role="tablist" aria-label="Ten words" aria-orientation="vertical">
+        <li role="presentation"><button class="w" role="tab" id="w0" aria-selected="true" aria-controls="d0" tabindex="0"><span class="n">01</span><span class="t">Synthesis</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w1" aria-selected="false" aria-controls="d1" tabindex="-1"><span class="n">02</span><span class="t">Wonder</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w2" aria-selected="false" aria-controls="d2" tabindex="-1"><span class="n">03</span><span class="t">Judgement</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w3" aria-selected="false" aria-controls="d3" tabindex="-1"><span class="n">04</span><span class="t">Power</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w4" aria-selected="false" aria-controls="d4" tabindex="-1"><span class="n">05</span><span class="t">Purpose</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w5" aria-selected="false" aria-controls="d5" tabindex="-1"><span class="n">06</span><span class="t">Execution</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w6" aria-selected="false" aria-controls="d6" tabindex="-1"><span class="n">07</span><span class="t">Ambition</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w7" aria-selected="false" aria-controls="d7" tabindex="-1"><span class="n">08</span><span class="t">Autonomy</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w8" aria-selected="false" aria-controls="d8" tabindex="-1"><span class="n">09</span><span class="t">Tension</span></button></li>
+        <li role="presentation"><button class="w" role="tab" id="w9" aria-selected="false" aria-controls="d9" tabindex="-1"><span class="n">10</span><span class="t">Beauty</span></button></li>
+      </ol>
 
-    <div class="tw-panel">
-      <div class="tw-meta">
-        <span class="label quiet" id="tw-count">01 / 10</span>
-        <span class="term" id="tw-term">Synthesis</span>
-      </div>
-      <div class="tw-text">
-        <!-- Edit the ten descriptions here -->
-        <div class="tw-desc on" id="d0" role="tabpanel" aria-labelledby="w0" data-term="Synthesis" data-n="01">
-          <p>I enjoy synthesis far more than specialisation. I have no desire to become the world's foremost expert on one narrow subject; I would much rather always be learning extremely quickly, jumping from curve to curve. Talk to the specialists, synthesise conflicting information, form a judgement, move on to the next problem.</p>
-          <p>I don't have to be the most intelligent person in the room, but I must be surrounded by intelligent people I can always learn from.</p>
+      <div class="tw-panel">
+        <div class="tw-meta">
+          <span class="label" id="tw-count">01 / 10</span>
+          <span class="term" id="tw-term">Synthesis</span>
         </div>
-        <div class="tw-desc" id="d1" role="tabpanel" aria-labelledby="w1" data-term="Wonder" data-n="02">
-          <p>I have a strong sense of wonder, and I look for professionalised curiosity: a life that lets me ask strangers absurd numbers of questions about their lives and their businesses.</p>
-          <p>I like people. I like observing different types of people, and building a catalogue of labels and types.</p>
+        <div class="tw-text">
+          <!-- Edit the ten descriptions here -->
+          <div class="tw-desc on" id="d0" role="tabpanel" aria-labelledby="w0" data-term="Synthesis" data-n="01">
+            <p>I enjoy synthesis far more than specialisation. I have no desire to become the world's foremost expert on one narrow subject; I would much rather always be learning extremely quickly, jumping from curve to curve. Talk to the specialists, synthesise conflicting information, form a judgement, move on to the next problem.</p>
+            <p>I don't have to be the most intelligent person in the room, but I must be surrounded by intelligent people I can always learn from.</p>
+          </div>
+          <div class="tw-desc" id="d1" role="tabpanel" aria-labelledby="w1" data-term="Wonder" data-n="02">
+            <p>I have a strong sense of wonder, and I look for professionalised curiosity: a life that lets me ask strangers absurd numbers of questions about their lives and their businesses.</p>
+            <p>I like people. I like observing different types of people, and building a catalogue of labels and types.</p>
+          </div>
+          <div class="tw-desc" id="d2" role="tabpanel" aria-labelledby="w2" data-term="Judgement" data-n="03">
+            <p>I want judgement, not merely analysis. Endless philosophical qualification frustrates me. Eventually I want to know that A is not B and 2+2=4. Only aesthetically do I enjoy suspension and ambiguity.</p>
+            <p>Advisory roles interest me as a way to learn. Eventually, I want to fully own my decisions, with skin in the game.</p>
+          </div>
+          <div class="tw-desc" id="d3" role="tabpanel" aria-labelledby="w3" data-term="Power" data-n="04">
+            <p>I am extremely interested in power and capital. I want to be in the room where allocation decisions happen; I enjoy proximity to consequential things.</p>
+            <p>I am also extremely suspicious of them. I am hyper-aware of the structures that govern our world, and of how their claws reach into absolutely everything. I hate bureaucracy. I despise oligarchy. I hold both of these at once.</p>
+          </div>
+          <div class="tw-desc" id="d4" role="tabpanel" aria-labelledby="w4" data-term="Purpose" data-n="05">
+            <p>I need to know that I am changing the world in some way. I want to work with something real and make something that lasts.</p>
+            <p>I cannot be aimless. I need a greater cause, and I do not confuse means for ends.</p>
+          </div>
+          <div class="tw-desc" id="d5" role="tabpanel" aria-labelledby="w5" data-term="Execution" data-n="06">
+            <p>Ideas have become cheaper, so I have grown more execution-driven. I adapt with the times.</p>
+            <p>I fear becoming an enabler while going nowhere myself; becoming the critic without ever having produced anything to be critiqued.</p>
+          </div>
+          <div class="tw-desc" id="d6" role="tabpanel" aria-labelledby="w6" data-term="Ambition" data-n="07">
+            <p>I fear mediocrity. I fear complacency, and the slow exsanguination of ambition.</p>
+            <p>I want many, too many things. I aspire to be more audacious, and apathetic enough to what people say that I can care more about what I care about. I would rather my actions hold up in retrospect than be applauded in the moment.</p>
+          </div>
+          <div class="tw-desc" id="d7" role="tabpanel" aria-labelledby="w7" data-term="Autonomy" data-n="08">
+            <p>I have a natural aversion to what is conventional and socially conditioned. Agency matters to me: I must have full awareness of my decisions and their justifications. I reject romanticised narratives with no basis. I rebel against romanticised rebellion.</p>
+            <p>I am obsessed with authenticity as a loaded term. I want to see the truth of the matter, and the truth of a person, and I think it is important that authenticity is not one-dimensionality.</p>
+          </div>
+          <div class="tw-desc" id="d8" role="tabpanel" aria-labelledby="w8" data-term="Tension" data-n="09">
+            <p>I see the world in dualities and tensions, and I enjoy transcendence. I do not fear great failures if they mean I will taste great success.</p>
+            <p>I do not fear non-linearity. I trust the integrity of my motivations, and I understand I will never obtain perfect epistemic certainty. I am a metamodernist, which mostly means I trap myself in infinite ironic regress.</p>
+          </div>
+          <div class="tw-desc" id="d9" role="tabpanel" aria-labelledby="w9" data-term="Beauty" data-n="10">
+            <p>I love beautiful things, but most of all I am a materialist for beautiful experiences. I collect memories and stories, and I polish them into personal myths.</p>
+            <p>I am perpetually interested in the altered states of ordinary things. I improvise the way a jazz pianist knows the discordant chords will coalesce into a melody.</p>
+          </div>
         </div>
-        <div class="tw-desc" id="d2" role="tabpanel" aria-labelledby="w2" data-term="Judgement" data-n="03">
-          <p>I want judgement, not merely analysis. Endless philosophical qualification frustrates me. Eventually I want to know that A is not B and 2+2=4. Only aesthetically do I enjoy suspension and ambiguity.</p>
-          <p>Advisory roles interest me as a way to learn. Eventually, I want to fully own my decisions, with skin in the game.</p>
+        <div class="tw-steps">
+          <button class="btn label" type="button" id="tw-prev" aria-label="Previous word"><span aria-hidden="true">&larr;</span> Prev</button>
+          <button class="btn label" type="button" id="tw-next" aria-label="Next word">Next <span aria-hidden="true">&rarr;</span></button>
         </div>
-        <div class="tw-desc" id="d3" role="tabpanel" aria-labelledby="w3" data-term="Power" data-n="04">
-          <p>I am extremely interested in power and capital. I want to be in the room where allocation decisions happen; I enjoy proximity to consequential things.</p>
-          <p>I am also extremely suspicious of them. I am hyper-aware of the structures that govern our world, and of how their claws reach into absolutely everything. I hate bureaucracy. I despise oligarchy. I hold both of these at once.</p>
-        </div>
-        <div class="tw-desc" id="d4" role="tabpanel" aria-labelledby="w4" data-term="Purpose" data-n="05">
-          <p>I need to know that I am changing the world in some way. I want to work with something real and make something that lasts.</p>
-          <p>I cannot be aimless. I need a greater cause, and I do not confuse means for ends.</p>
-        </div>
-        <div class="tw-desc" id="d5" role="tabpanel" aria-labelledby="w5" data-term="Execution" data-n="06">
-          <p>Ideas have become cheaper, so I have grown more execution-driven. I adapt with the times.</p>
-          <p>I fear becoming an enabler while going nowhere myself; becoming the critic without ever having produced anything to be critiqued.</p>
-        </div>
-        <div class="tw-desc" id="d6" role="tabpanel" aria-labelledby="w6" data-term="Ambition" data-n="07">
-          <p>I fear mediocrity. I fear complacency, and the slow exsanguination of ambition.</p>
-          <p>I want many, too many things. I aspire to be more audacious, and apathetic enough to what people say that I can care more about what I care about. I would rather my actions hold up in retrospect than be applauded in the moment.</p>
-        </div>
-        <div class="tw-desc" id="d7" role="tabpanel" aria-labelledby="w7" data-term="Autonomy" data-n="08">
-          <p>I have a natural aversion to what is conventional and socially conditioned. Agency matters to me: I must have full awareness of my decisions and their justifications. I reject romanticised narratives with no basis. I rebel against romanticised rebellion.</p>
-          <p>I am obsessed with authenticity as a loaded term. I want to see the truth of the matter, and the truth of a person, and I think it is important that authenticity is not one-dimensionality.</p>
-        </div>
-        <div class="tw-desc" id="d8" role="tabpanel" aria-labelledby="w8" data-term="Tension" data-n="09">
-          <p>I see the world in dualities and tensions, and I enjoy transcendence. I do not fear great failures if they mean I will taste great success.</p>
-          <p>I do not fear non-linearity. I trust the integrity of my motivations, and I understand I will never obtain perfect epistemic certainty. I am a metamodernist, which mostly means I trap myself in infinite ironic regress.</p>
-        </div>
-        <div class="tw-desc" id="d9" role="tabpanel" aria-labelledby="w9" data-term="Beauty" data-n="10">
-          <p>I love beautiful things, but most of all I am a materialist for beautiful experiences. I collect memories and stories, and I polish them into personal myths.</p>
-          <p>I am perpetually interested in the altered states of ordinary things. I improvise the way a jazz pianist knows the discordant chords will coalesce into a melody.</p>
-        </div>
-      </div>
-      <div class="tw-steps">
-        <button class="btn label" type="button" id="tw-prev" aria-label="Previous word">Prev</button>
-        <button class="btn label" type="button" id="tw-next" aria-label="Next word">Next</button>
       </div>
     </div>
   </section>
 
-  <!-- ================= ABOUT ================= -->
-  <section class="about" id="about" aria-labelledby="about-h">
-    <h2 id="about-h">About</h2>
-    <div class="inscription">
-      <p class="route" aria-label="Chicago, then Jakarta, then Oxford"><span>Chicago</span><span class="arrow" aria-hidden="true">&rarr;</span><span>Jakarta</span><span class="arrow" aria-hidden="true">&rarr;</span><span>Oxford</span></p>
-      <p class="line">Reading Philosophy, Politics and Economics at Oxford.</p>
+  <!-- ================= ABOUT, opening (still on the dark ground) ================= -->
+  <section class="about-top wrap" id="about" aria-labelledby="about-h">
+    <h2 id="about-h" class="label quiet">About</h2>
+    <p class="route" aria-label="Chicago, then Jakarta, then Oxford"><span>Chicago</span><span class="arrow" aria-hidden="true">&rarr;</span><span>Jakarta</span><span class="arrow" aria-hidden="true">&rarr;</span><i>Oxford</i></p>
+  </section>
+</div>
+
+<div class="light" id="light">
+
+  <!-- ================= ABOUT, biography =================
+       The portrait rises across the seam between the dark and light grounds.
+       Edit the three paragraphs freely. -->
+  <section class="about wrap" aria-label="Biography">
+    <div class="bio">
+      <p>I am reading Philosophy, Politics and Economics at Oxford. Before that, in Jakarta, I co-founded Blimp Academy, a social enterprise teaching business and design to refugees and students.</p>
+      <p>I enjoy synthesis far more than specialisation: talk to the specialists, form a judgement, move on to the next problem. I have a strong sense of wonder, and I like people; I would happily ask strangers absurd numbers of questions about their lives. I am extremely interested in power and capital, and extremely suspicious of them. I hold both at once.</p>
+      <p>I love beautiful things, but most of all I am a materialist for beautiful experiences. I collect memories and stories, and I polish them into personal myths. A few of them are below.</p>
     </div>
     <figure class="portrait ph">
       <img src="images/04-london-friends.jpg" width="960" height="1280" alt="Nadia smiling by the Thames at night, the London Eye lit behind her">
@@ -102,39 +137,41 @@
     </figure>
   </section>
 
-  <!-- ================= GALLERY ================= -->
-  <!-- Each figure's --r is width / height; figures in a row share a height. -->
-  <section class="gallery" id="gallery" aria-labelledby="gal-h">
-    <div class="headrow">
+  <!-- ================= GALLERY =================
+       Each figure's --r is width / height; figures in a row share a height.
+       The rows step down in scale: the strongest pictures first, details last. -->
+  <section class="gallery wrap" id="gallery" aria-labelledby="gal-h">
+    <div class="sec-head">
       <h2 id="gal-h">Gallery</h2>
       <span class="label quiet">Nine photographs</span>
     </div>
-    <div class="row r1">
-      <figure class="ph" style="--r:1.5006"><img src="images/06-sculpture.jpg" width="1280" height="853" alt="Nadia on a stone bench at night, facing a weathered sculpture of a seated figure" loading="lazy"><figcaption class="label"><span class="n">01</span><span class="t">Sculpture study</span></figcaption></figure>
-      <figure class="ph" style="--r:0.7523"><img src="images/02-sheldonian-roof.jpg" width="963" height="1280" alt="Nadia on a rooftop at night against lit Oxford stonework under a starry sky" loading="lazy"><figcaption class="label"><span class="n">02</span><span class="t">Sheldonian, before sunrise</span></figcaption></figure>
+    <div class="row r-a">
+      <figure class="ph p" style="--r:0.6664"><img src="images/03-museum-ball.jpg" width="853" height="1280" alt="Nadia in a red silk dress beneath a dinosaur skeleton lit in red" loading="lazy"><figcaption><span class="n label">01</span><span class="t">Natural History Museum</span></figcaption></figure>
+      <figure class="ph l" style="--r:1.5006"><img src="images/06-sculpture.jpg" width="1280" height="853" alt="Nadia on a stone bench at night, facing a weathered sculpture of a seated figure" loading="lazy"><figcaption><span class="n label">02</span><span class="t">Sculpture study</span></figcaption></figure>
     </div>
-    <div class="row r2">
-      <figure class="ph" style="--r:0.6664"><img src="images/13-birthday-poem.jpg" width="853" height="1280" alt="A typewritten birthday poem in Indonesian held up to the camera" loading="lazy"><figcaption class="label"><span class="n">03</span><span class="t">Untuk Nadia, 26/07/26</span></figcaption></figure>
-      <figure class="ph wide" style="--r:1.5006"><img src="images/05-late-night-study.jpg" width="1280" height="853" alt="A dictionary and an economics textbook open on a carpet beside a bottle of wine" loading="lazy"><figcaption class="label"><span class="n">04</span><span class="t">Late</span></figcaption></figure>
-      <figure class="ph" style="--r:0.6664"><img src="images/03-museum-ball.jpg" width="853" height="1280" alt="Nadia in a red silk dress beneath a dinosaur skeleton lit in red" loading="lazy"><figcaption class="label"><span class="n">05</span><span class="t">Natural History Museum</span></figcaption></figure>
+    <div class="row r-b">
+      <figure class="ph p" style="--r:0.7523"><img src="images/02-sheldonian-roof.jpg" width="963" height="1280" alt="Nadia on a rooftop at night against lit Oxford stonework under a starry sky" loading="lazy"><figcaption><span class="n label">03</span><span class="t">Sheldonian, before sunrise</span></figcaption></figure>
+      <figure class="ph l" style="--r:1.3333"><img src="images/09-inness-sunrise.jpg" width="1280" height="960" alt="George Inness painting of sunrise breaking through dark woods" loading="lazy"><figcaption><span class="n label">04</span><span class="t">George Inness, 1887</span></figcaption></figure>
+      <figure class="ph p" style="--r:0.6664"><img src="images/13-birthday-poem.jpg" width="853" height="1280" alt="A typewritten birthday poem in Indonesian held up to the camera" loading="lazy"><figcaption><span class="n label">05</span><span class="t">Untuk Nadia, 26/07/26</span></figcaption></figure>
     </div>
-    <div class="row r3 small">
-      <figure class="ph" style="--r:1.3333"><img src="images/01-countryside-walk.jpg" width="1280" height="960" alt="Nadia from behind on a hilltop, looking out over fields" loading="lazy"><figcaption class="label"><span class="n">06</span><span class="t">Fifty-five kilometres</span></figcaption></figure>
-      <figure class="ph" style="--r:0.7500"><img src="images/11-batik-kauman.jpg" width="960" height="1280" alt="People in batik walking down a narrow lane of old shopfronts in Solo" loading="lazy"><figcaption class="label"><span class="n">07</span><span class="t">Batik Kauman, Solo</span></figcaption></figure>
-      <figure class="ph" style="--r:1.3333"><img src="images/09-inness-sunrise.jpg" width="1280" height="960" alt="George Inness painting of sunrise breaking through dark woods" loading="lazy"><figcaption class="label"><span class="n">08</span><span class="t">George Inness, 1887</span></figcaption></figure>
-      <figure class="ph" style="--r:0.7500"><img src="images/12-dinner-polaroids.jpg" width="960" height="1280" alt="Polaroids from dinner parties scattered on a table beside gold jewellery" loading="lazy"><figcaption class="label"><span class="n">09</span><span class="t">After dinner</span></figcaption></figure>
+    <div class="row r-c">
+      <figure class="ph p sq" style="--r:0.7500"><img src="images/12-dinner-polaroids.jpg" width="960" height="1280" alt="Polaroids from dinner parties scattered on a table beside gold jewellery" loading="lazy"><figcaption><span class="n label">06</span><span class="t">After dinner</span></figcaption></figure>
+      <figure class="ph l sm" style="--r:1.3333"><img src="images/01-countryside-walk.jpg" width="1280" height="960" alt="Nadia from behind on a hilltop, looking out over fields" loading="lazy"><figcaption><span class="n label">07</span><span class="t">Fifty-five kilometres</span></figcaption></figure>
+      <figure class="ph p" style="--r:0.7500"><img src="images/11-batik-kauman.jpg" width="960" height="1280" alt="People in batik walking down a narrow lane of old shopfronts in Solo" loading="lazy"><figcaption><span class="n label">08</span><span class="t">Batik Kauman, Solo</span></figcaption></figure>
+      <figure class="ph l sm" style="--r:1.5006"><img src="images/05-late-night-study.jpg" width="1280" height="853" alt="A dictionary and an economics textbook open on a carpet beside a bottle of wine" loading="lazy"><figcaption><span class="n label">09</span><span class="t">Late</span></figcaption></figure>
     </div>
   </section>
 
   <!-- Replace each # with your real link -->
-  <footer class="foot">
-    <span class="sig">Nadia Putri</span>
+  <footer class="foot wrap">
+    <span class="sig">Nadia <i>Putri</i></span>
     <nav class="label" aria-label="Contact">
       <a href="#">Email</a>
       <a href="#">LinkedIn</a>
       <a href="#top">Top</a>
     </nav>
   </footer>
+</div>
 </main>
 
 <script src="main.js"></script>

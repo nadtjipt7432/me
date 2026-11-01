@@ -42,8 +42,8 @@
   if (prev) prev.addEventListener("click", function () { select(current - 1); });
   if (next) next.addEventListener("click", function () { select(current + 1); });
 
-  // Underline the nav item for the section in view
-  var links = Array.prototype.slice.call(document.querySelectorAll(".top nav a"));
+  // Mark the nav item for the section in view
+  var links = Array.prototype.slice.call(document.querySelectorAll(".bar nav a"));
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {
@@ -56,5 +56,25 @@
     ["ten-words", "about", "gallery"].forEach(function (id) {
       var el = document.getElementById(id); if (el) io.observe(el);
     });
+  }
+
+  // The bar takes the colour of the ground beneath it, and shows the
+  // small name once the masthead has scrolled away
+  var bar = document.querySelector(".bar");
+  var light = document.getElementById("light");
+  var mast = document.querySelector(".mast-name");
+  var ticking = false;
+  function paint() {
+    ticking = false;
+    var h = bar.offsetHeight;
+    bar.setAttribute("data-tone", light.getBoundingClientRect().top <= h / 2 ? "light" : "dark");
+    bar.classList.toggle("named", mast.getBoundingClientRect().bottom < h);
+  }
+  if (bar && light && mast) {
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(paint); }
+    }, { passive: true });
+    window.addEventListener("resize", paint);
+    paint();
   }
 })();
